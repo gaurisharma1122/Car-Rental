@@ -2,6 +2,7 @@
 :root{
   --orange: #ff4d30;
   --text_color_1: #2e2e2e;
+  --text_color_2: #7c7c7c;
   --white: #fff;
 }
 *{
@@ -22,6 +23,7 @@ button{
 .container{
   width: 80%;
   margin: 0 auto;
+  padding: 4rem 0;
 }
 .btn-orange{
   padding: 15px 20px;
@@ -47,4 +49,26 @@ button{
 .btn-black:hover{
   background-color: transparent;
   color: var(--text_color_1);
+}
+.btn-orange i, .btn-black i{
+  font-size: 1rem;
+  margin-left: 10px;
+}
+@media  screen and (max-width: 850px){
+
+}
+@media  screen and (max-width: 600px){
+  .container{
+    width: 90%;
+  }
+  .btn-orange, .btn-black{
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btn-orange i, .btn-black i{
+    font-size: 0.7rem;
+    margin-left: 5px;
+  }
 }

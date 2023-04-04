@@ -33,12 +33,53 @@
 .home-buttons button{
     margin-right: 10px;
 }
+.home-container-form h2{
+    margin-bottom: 20px;
+    color: var(--text_color_1);
+}
+.home-container-form{
+    background-color: var(--white);
+    padding: 40px 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.home-container-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: end;
+}
+.home-container-form form div label{
+    color: var(--text_color_1);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.home-container-form form div label i{
+    color: var(--orange);
+    margin-right: 5px;
+}
+.home-container-form form input, .home-container-form form select{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: var(--text_color_2);
+    margin-top: 10px;
+}
+.home-container-form form div button{
+    width: 100%;
+}
 @media  screen and (max-width: 850px){
     .home-content{
         width: 100%;
     }
     .home-image{
         display: none;
+    }
+    .home-container-form{
+        margin-top: 40px;
+    }
+    .home-container-form form{
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media  screen and (max-width: 600px){
@@ -53,5 +94,15 @@
     }
     .home-buttons button{
         margin-right: 5px;
+    }
+    .home-container-form h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .home-container-form form{
+        grid-template-columns: 1fr;
+    }
+    .home-container-form form div label{
+        font-size: 0.8rem;
     }
 }

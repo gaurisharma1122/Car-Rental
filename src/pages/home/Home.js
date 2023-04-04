@@ -2,11 +2,12 @@ import React from 'react'
 import "./Home.css"
 import car_1 from "../../images/car-1.png"
 import Navbar from '../../components/navbar/Navbar'
+import { carTypes, locations } from '../../data'
 
 const Home = () => {
     return (
         <section className='home'>
-            <Navbar/>
+            <Navbar />
             <div className="container home-container">
                 <div className="home-container-top">
                     <div className="home-content">
@@ -27,6 +28,66 @@ const Home = () => {
                     <div className="home-image">
                         <img src={car_1} alt="car" />
                     </div>
+                </div>
+
+                <div className="home-container-form">
+                    <h2>Book a car</h2>
+                    <form>
+                        <div>
+                            <label>
+                                <i className="fa-solid fa-car"></i> Select your car type
+                            </label>
+                            <select required>
+                                <option>Select your car type</option>
+                                {
+                                    carTypes.map((item) => {
+                                        return <option key={item.id} value={item.title}>{item.title}</option>
+                                    })
+                                }
+                            </select>
+                        </div>
+                        <div>
+                            <label>
+                                <i className="fa-solid fa-location-dot"></i> Pick-Up location
+                            </label>
+                            <select required>
+                                <option>Select your location</option>
+                                {
+                                    locations.map((item) => {
+                                        return <option key={item.id} value={item.title}>{item.title}</option>
+                                    })
+                                }
+                            </select>
+                        </div>
+                        <div>
+                            <label>
+                                <i className="fa-solid fa-location-dot"></i> Drop-Off location
+                            </label>
+                            <select required>
+                                <option>Select your location</option>
+                                {
+                                    locations.map((item) => {
+                                        return <option key={item.id} value={item.title}>{item.title}</option>
+                                    })
+                                }
+                            </select>
+                        </div>
+                        <div>
+                            <label>
+                                <i className="fa-solid fa-calendar-days"></i> Pick-Up date
+                            </label>
+                            <input type="date" required />
+                        </div>
+                        <div>
+                            <label>
+                                <i className="fa-solid fa-calendar-days"></i> Drop-Off date
+                            </label>
+                            <input type="date" required/>
+                        </div>
+                        <div>
+                            <button className='btn-orange'>Book Car</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>

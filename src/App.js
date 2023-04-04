@@ -6,6 +6,7 @@ import VehicleModels from "./pages/VehicleModels";
 import Testimonials from "./pages/Testimonials";
 import OurTeam from "./pages/OurTeam";
 import Contact from "./pages/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         <Route exact path="/testimonials" element={<Testimonials/>}/>
         <Route exact path="/our_team" element={<OurTeam/>}/>
         <Route exact path="/contact" element={<Contact/>}/>
-
       </Routes>
+      <Footer/>
     </div>
   );
 }

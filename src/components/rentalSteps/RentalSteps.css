@@ -1,0 +1,63 @@
+.rental-steps{
+    background-color: var(--white);
+}
+.rental-steps-container h3{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text_color_1);
+}
+.rental-steps-container h1{
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: var(--orange);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.steps{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.step{
+    text-align: center;
+}
+.step i{
+    font-size: 2rem;
+    color: var(--orange);
+    padding: 25px;
+    background-color: var(--light_orange);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.step h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: var(--text_color_1);
+}
+.step p{
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 500;
+    color: var(--text_color_2);
+    font-size: 1rem;
+}
+@media  screen and (max-width: 850px){
+    .steps{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+@media  screen and (max-width: 600px){
+    .rental-steps-container h1{
+        font-size: 2rem;
+    }
+    .step h3, .rental-steps-container h3{
+        font-size: 1.2rem;
+    }
+    .step p{
+        font-size: 0.9rem;
+    }
+}

@@ -3,6 +3,7 @@ import "./Home.css"
 import car_1 from "../../images/car-1.png"
 import Navbar from '../../components/navbar/Navbar'
 import { carTypes, locations } from '../../data'
+import RentalSteps from '../../components/rentalSteps/RentalSteps'
 
 const Home = () => {
     return (
@@ -90,6 +91,7 @@ const Home = () => {
                     </form>
                 </div>
             </div>
+            <RentalSteps/>
         </section>
     )
 }

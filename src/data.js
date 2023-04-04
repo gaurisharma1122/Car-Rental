@@ -6,7 +6,6 @@ export const navLinks= [
     { id:5, title: 'Our Team', url: '/our_team'},
     { id:6, title: 'Contact', url: '/contact'},
 ];
-
 export const carTypes= [
     { id: 1, title: 'Audi A1 S-Line'},
     { id: 2, title: 'VW Golf 6'},
@@ -21,4 +20,9 @@ export const locations= [
     { id: 3, title: 'Nis'},
     { id: 4, title: 'Kragujevac'},
     { id: 5, title: 'Sabotica'}, 
-]
+];
+export const rentalSteps=[
+    { id: 1, title: 'Select Car', description: 'We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs', icon: 'fa-solid fa-car'},
+    { id: 2, title: 'Contact Operator', description: 'Our knowledgeable and friendly operators are always ready to help with any questions or concerns', icon: 'fa-solid fa-headset'},
+    { id: 3, title: "Let's Drive", description: "Whether you're hitting the open road, we have got you covered with our wide range of cars", icon: 'fa-solid fa-car-on'}, 
+];

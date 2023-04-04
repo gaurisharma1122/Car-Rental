@@ -1,20 +1,6 @@
 .rental-steps{
     background-color: var(--white);
 }
-.rental-steps-container h3{
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    text-align: center;
-    font-weight: 700;
-    color: var(--text_color_1);
-}
-.rental-steps-container h1{
-    font-size: 2.4rem;
-    font-weight: 800;
-    color: var(--orange);
-    text-align: center;
-    margin-bottom: 4rem;
-}
 .steps{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -51,10 +37,8 @@
     }
 }
 @media  screen and (max-width: 600px){
-    .rental-steps-container h1{
-        font-size: 2rem;
-    }
-    .step h3, .rental-steps-container h3{
+    
+    .step h3{
         font-size: 1.2rem;
     }
     .step p{

@@ -1,32 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
-:root{
+
+:root {
   --orange: #ff4d30;
   --light_orange: #fde9e5;
   --text_color_1: #2e2e2e;
   --text_color_2: #7c7c7c;
   --white: #fff;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Libre Franklin', sans-serif;
 }
-ul{
+
+ul {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
-button{
+
+button {
   cursor: pointer;
 }
-.container{
+
+.container {
   width: 80%;
   margin: 0 auto;
   padding: 4rem 0;
 }
-.btn-orange{
+
+.heading1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--orange);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.heading3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--text_color_1);
+}
+
+.heading-para{
+  font-size: 1rem;
+  color: var(--text_color_2);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto 4rem auto;
+  font-weight: 500;
+}
+
+.btn-orange {
   padding: 15px 20px;
   background-color: var(--orange);
   border: none;
@@ -35,10 +67,12 @@ button{
   font-size: 1rem;
   font-weight: 600;
 }
-.btn-orange:hover{
-  box-shadow: 3px 0 14px 0px rgba(255,160,145,0.76);
+
+.btn-orange:hover {
+  box-shadow: 3px 0 14px 0px rgba(255, 160, 145, 0.76);
 }
-.btn-black{
+
+.btn-black {
   padding: 12px 20px;
   background-color: var(--text_color_1);
   border: 3px solid var(--text_color_1);
@@ -47,28 +81,45 @@ button{
   font-size: 1rem;
   font-weight: 600;
 }
-.btn-black:hover{
+
+.btn-black:hover {
   background-color: transparent;
   color: var(--text_color_1);
 }
-.btn-orange i, .btn-black i{
+
+.btn-orange i,
+.btn-black i {
   font-size: 1rem;
   margin-left: 10px;
 }
-@media  screen and (max-width: 850px){
 
-}
-@media  screen and (max-width: 600px){
-  .container{
+@media screen and (max-width: 850px) {}
+
+@media screen and (max-width: 600px) {
+  .container {
     width: 90%;
   }
-  .btn-orange, .btn-black{
+
+  .heading3 {
+    font-size: 1.2rem;
+  }
+  .heading1{
+    font-size: 2rem;
+  }
+  .heading-para{
+    font-size: 0.9rem;
+  }
+
+  .btn-orange,
+  .btn-black {
     font-size: 0.7rem;
     font-weight: 500;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .btn-orange i, .btn-black i{
+
+  .btn-orange i,
+  .btn-black i {
     font-size: 0.7rem;
     margin-left: 5px;
   }

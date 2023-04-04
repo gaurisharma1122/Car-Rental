@@ -1,0 +1,108 @@
+.rental-fleet{
+    background-color: var(--white);
+}
+.rental-fleet-container{
+    width: 90%;
+}
+.rental-fleet-container h1{
+    margin-bottom: 20px;
+}
+.rental-fleet-model{
+    display: flex;
+    justify-content: space-between;
+}
+.rental-model-buttons{
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+}
+.rental-model-buttons button{
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 10px;
+}
+.rental-model-buttons button:hover{
+    color: var(--white);
+    background-color: var(--orange);
+}
+.rental-model-info{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rental-model-img{
+    width: 65%;
+}
+.rental-model-img img{
+    width: 100%;
+}
+.rental-model-table{
+    width: 32%;
+}
+.rental-model-table ul li{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--text_color_2);
+    border-left: 1px solid var(--text_color_2);
+    border-right: 1px solid var(--text_color_2);
+}
+.model-rent{
+    grid-template-columns: 1fr!important;
+    padding: 10px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 600;
+    border-bottom: none!important;
+    border-left: none!important;
+    border-right: none!important;
+}
+.rental-model-table button{
+    margin-top: 10px;
+    width: 100%;
+}
+.active-model-button{
+    background-color: var(--orange);
+    color: var(--white);
+}
+@media screen and (max-width: 1100px) {
+    .rental-model-buttons{
+        width: 100%;
+    }
+    .rental-model-info{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .rental-fleet-model{
+        flex-direction: column;
+    }
+}
+@media  screen and (max-width: 850px){
+    
+    .rental-model-info{
+        flex-direction: column;
+    }
+    .rental-model-img{
+        width: 100%;
+    }
+    .rental-model-table{
+        width: 65%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .rental-model-buttons button{
+        font-size: 1rem;
+    }
+    .rental-model-table{
+        width: 100%;
+    }
+    .rental-model-table ul li{
+        font-size: 0.9rem;
+    }
+}

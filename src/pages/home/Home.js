@@ -4,6 +4,7 @@ import car_1 from "../../images/car-1.png"
 import Navbar from '../../components/navbar/Navbar'
 import { carTypes, locations } from '../../data'
 import RentalSteps from '../../components/rentalSteps/RentalSteps'
+import RentalFleet from '../../components/rentalFleet/RentalFleet'
 
 const Home = () => {
     return (
@@ -92,6 +93,7 @@ const Home = () => {
                 </div>
             </div>
             <RentalSteps/>
+            <RentalFleet/>
         </section>
     )
 }

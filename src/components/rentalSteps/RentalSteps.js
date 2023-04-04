@@ -6,8 +6,8 @@ const RentalSteps = () => {
   return (
     <section className='rental-steps'>
       <div className="container rental-steps-container">
-        <h3>Plan your trip now</h3>
-        <h1>Quick & easy car rental</h1>
+        <h3 className='heading3'>Plan your trip now</h3>
+        <h1 className='heading1'>Quick & easy car rental</h1>
         <div className='steps'>
             {
                 rentalSteps.map((item)=>{

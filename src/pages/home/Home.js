@@ -5,6 +5,8 @@ import Navbar from '../../components/navbar/Navbar'
 import { carTypes, locations } from '../../data'
 import RentalSteps from '../../components/rentalSteps/RentalSteps'
 import RentalFleet from '../../components/rentalFleet/RentalFleet'
+import GetInTouch from '../../components/getInTouch/GetInTouch'
+import FAQ from '../../components/faq/FAQ'
 
 const Home = () => {
     return (
@@ -94,6 +96,8 @@ const Home = () => {
             </div>
             <RentalSteps/>
             <RentalFleet/>
+            <FAQ/>
+            <GetInTouch/>
         </section>
     )
 }

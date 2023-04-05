@@ -1,0 +1,11 @@
+.get-in-touch{
+    background-color: var(--text_color_1);
+}
+.get-in-touch h1{
+    margin-bottom: 0;
+    color: var(--white);
+}
+.get-in-touch span{
+    color: var(--orange);
+    margin-left: 10px;
+}

@@ -1,21 +1,22 @@
-.faq{
-}
+
 .faq-container h1{
     margin-bottom: 20px;
 }
 .content{
     display: flex;
+    align-items: center;
 }
 .faq-img-container img{
     width: 100%;
 }
 .faq-questions{
     width: 65%;
+    height: 100%;
     border-radius: 5px;
     overflow: hidden;
+    border-top: 1px solid #e2e0e0;
     border-left: 1px solid #e2e0e0;
     border-right: 1px solid #e2e0e0;
-    border-top: 1px solid #e2e0e0;
 }
 .question-container{
     background-color: var(--white);

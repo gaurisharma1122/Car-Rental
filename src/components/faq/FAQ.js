@@ -19,7 +19,10 @@ const FAQ = () => {
                                     <div key={item.id} className="question-container">
                                         <h3 className={activeIndex === item.id ? 'active-question' : undefined}
                                             onClick={() => setActiveIndex(item.id)}>
-                                            {item.id}. {item.title} <span><i className="fa-solid fa-angle-down"></i></span>
+                                            {item.id}. {item.title} 
+                                            <span>
+                                                <i className= {activeIndex === item.id ? 'fa-solid fa-angle-up' : 'fa-solid fa-angle-down' }></i>
+                                            </span>
                                         </h3>
                                         <p className={activeIndex === item.id ? 'active-answer' : undefined} >
                                             {item.description}

@@ -93,6 +93,14 @@ button {
   margin-left: 10px;
 }
 
+.page-hero-link{
+  color: var(--text_color_1);
+}
+
+.page-hero-link:hover{
+  color: var(--orange);
+}
+
 @media screen and (max-width: 850px) {}
 
 @media screen and (max-width: 600px) {

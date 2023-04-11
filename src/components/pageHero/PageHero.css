@@ -1,0 +1,9 @@
+.page-hero{
+    background-image: url("../../images/car-hero-bg.png"), linear-gradient( rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+.page-hero-container h1{
+    margin-bottom: 1rem;
+}

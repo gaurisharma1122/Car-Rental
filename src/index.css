@@ -68,6 +68,10 @@ button {
   font-weight: 600;
 }
 
+.btn-orange a{
+  color: var(--white);
+}
+
 .btn-orange:hover {
   box-shadow: 3px 0 14px 0px rgba(255, 160, 145, 0.76);
 }

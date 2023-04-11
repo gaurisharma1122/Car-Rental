@@ -4,6 +4,14 @@ import toyota from "./images/car-toyota.jpg"
 import bmw from "./images/car-bmw.jpg"
 import mercedez from "./images/car-mercedes.jpg"
 import vw_passat from "./images/car-vw-passat.jpg"
+import car_1 from "./images/car-1-full.png"
+import car_2 from "./images/car-2-full.png"
+import car_3 from "./images/car-3-full.png"
+import car_4 from "./images/car-4-full.png"
+import car_5 from "./images/car-5-full.png"
+import car_6 from "./images/car-6-full.png"
+
+
 
 export const navLinks= [
     { id:1, title: 'Home', url: '/'},
@@ -35,12 +43,12 @@ export const rentalSteps=[
 ];
 export const vehicleModels=[
     
-    { id: 1, name: 'Audi A1 S-Line', image: audi, price: '45', characteristics:{ model: 'Audi', mark: 'A1', year: '2012', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'Gasoline' } },
-    { id: 2, name: 'VW Golf 6', image: vw, price: '37', characteristics:{ model: 'Golf 6', mark: 'Volkswagen', year: '2008', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'Diesel' } },
-    { id: 3, name: 'Toyota Camry', image: toyota, price: '30', characteristics:{ model: 'Camry', mark: 'Toyota', year: '2006', doors: '4/5', ac: 'yes', transmission: 'automatic', fuel: 'hybrid' } },
-    { id: 4, name: 'BMW 320 Modern Line', image: bmw, price: '35', characteristics:{ model: '320', mark: 'BMW', year: '2012', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'Diesel' } },
-    { id: 5, name: 'Mercedes-Benz-GLK', image: mercedez, price: '50', characteristics:{ model: 'Benz GLK', mark: 'Mercedes', year: '2006', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'diesel' } },
-    { id: 6, name: 'VW Passat CC', image: vw_passat, price: '27', characteristics:{ model: 'Passat CC', mark: 'Volkswagen', year: '2008', doors: '4/5', ac: 'yes', transmission: 'automatic', fuel: 'Gasoline' } },
+    { id: 1, name: 'Audi A1 S-Line', image: audi, full_image: car_1, price: '45', rating: 4, characteristics:{ model: 'Audi', mark: 'A1', year: '2012', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'Gasoline' } },
+    { id: 2, name: 'VW Golf 6', image: vw, full_image: car_2, price: '37', rating: 5, characteristics:{ model: 'Golf 6', mark: 'Volkswagen', year: '2008', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'Diesel' } },
+    { id: 3, name: 'Toyota Camry', image: toyota, full_image: car_3, price: '30', rating: 4, characteristics:{ model: 'Camry', mark: 'Toyota', year: '2006', doors: '4/5', ac: 'yes', transmission: 'automatic', fuel: 'hybrid' } },
+    { id: 4, name: 'BMW 320 Modern Line', image: bmw, full_image: car_4, price: '35', rating: 4, characteristics:{ model: '320', mark: 'BMW', year: '2012', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'Diesel' } },
+    { id: 5, name: 'Mercedes-Benz-GLK', image: mercedez, full_image: car_5, price: '50', rating: 3, characteristics:{ model: 'Benz GLK', mark: 'Mercedes', year: '2006', doors: '4/5', ac: 'yes', transmission: 'manual', fuel: 'diesel' } },
+    { id: 6, name: 'VW Passat CC', image: vw_passat, full_image: car_6, price: '27', rating: 5, characteristics:{ model: 'Passat CC', mark: 'Volkswagen', year: '2008', doors: '4/5', ac: 'yes', transmission: 'automatic', fuel: 'Gasoline' } },
     
 ];
 
